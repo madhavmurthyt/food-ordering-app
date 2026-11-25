@@ -1,0 +1,7 @@
+food-ordering-app-frontend/
+foodordering-app-backend/
+.env              # real DB password etc.
+pgdata/           # if compose mounts a local DB data folder
+.DS_Store
+.claude/*.lock
+.vscode/
