@@ -1,0 +1,1090 @@
+[
+  {
+    "id": "d01",
+    "col": "done",
+    "title": "MUI v5 Migration",
+    "desc": "Migrated from MUI v4 to v5 across all components",
+    "priority": "P0",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d02",
+    "col": "done",
+    "title": "React Router v6",
+    "desc": "Upgraded from react-router v5 to v6, added withRouter HOC",
+    "priority": "P0",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d03",
+    "col": "done",
+    "title": "Theme System",
+    "desc": "brand.js + theme.js with Poppins font, coral-red palette, MUI overrides",
+    "priority": "P0",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d04",
+    "col": "done",
+    "title": "Header Revamp",
+    "desc": "White AppBar, search pill, Avatar menu. Login modal removed.",
+    "priority": "P1",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d05",
+    "col": "done",
+    "title": "Home Page Revamp",
+    "desc": "Hero banner, category chips, card hover animations, skeleton loading",
+    "priority": "P1",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d06",
+    "col": "done",
+    "title": "Details Page Revamp",
+    "desc": "Hero image with gradient, PopularItems section, sticky cart",
+    "priority": "P1",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d07",
+    "col": "done",
+    "title": "Checkout Page Revamp",
+    "desc": "Styled stepper, payment card grid, address forms",
+    "priority": "P1",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d08",
+    "col": "done",
+    "title": "Profile Page",
+    "desc": "Order history, address management, name update, password change",
+    "priority": "P1",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d09",
+    "col": "done",
+    "title": "Footer + Polish",
+    "desc": "Footer on all pages, removed unused deps, zero warnings build",
+    "priority": "P2",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d10",
+    "col": "done",
+    "title": "Scroll-to-Top",
+    "desc": "Auto scroll to top on route navigation",
+    "priority": "P2",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d11",
+    "col": "done",
+    "title": "Hibernate / JPA Fixes",
+    "desc": "Fixed dialect config, JPA mappedBy bug, application.yaml cleanup",
+    "priority": "P0",
+    "platform": "Backend",
+    "milestone": "M1",
+    "owner": "Dev 1",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d12",
+    "col": "done",
+    "title": "Styling Consolidation",
+    "desc": "Consolidated 4 styling approaches into MUI sx. Deleted all CSS files.",
+    "priority": "P1",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d13",
+    "col": "done",
+    "title": "Google SSO",
+    "desc": "Dedicated /login page with Google Sign-In + phone/password fallback. Backend verifies ID token.",
+    "priority": "P0",
+    "platform": "Both",
+    "milestone": "M1",
+    "owner": "Dev 1 + Dev 2",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d14",
+    "col": "done",
+    "title": "M1-01: Fix OrderController Bug",
+    "desc": "Fixed flatBuildingName mapped to address UUID instead of flat/building number",
+    "priority": "P0",
+    "platform": "Backend",
+    "milestone": "M1",
+    "owner": "Dev 1",
+    "estimate": "30 min",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d15",
+    "col": "done",
+    "title": "M1-02: Env Config (Frontend)",
+    "desc": "Config.js reads REACT_APP_API_URL. brand.js reads REACT_APP_GOOGLE_CLIENT_ID.",
+    "priority": "P0",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "1.5 hrs",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d16",
+    "col": "done",
+    "title": "M1-02: Env Config (Backend)",
+    "desc": "Datasource via env vars. Google client-id via GOOGLE_CLIENT_ID. .env.example created.",
+    "priority": "P0",
+    "platform": "Backend",
+    "milestone": "M1",
+    "owner": "Dev 1",
+    "estimate": "1.5 hrs",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d17",
+    "col": "done",
+    "title": "M1-03: RBAC",
+    "desc": "role column on customer. RoleGuard utility. 4 roles. First user auto-ADMIN. Login response includes role.",
+    "priority": "P0",
+    "platform": "Backend",
+    "milestone": "M1",
+    "owner": "Dev 1",
+    "estimate": "5 hrs",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d18",
+    "col": "done",
+    "title": "M1-04: Email Login",
+    "desc": "Login accepts email or contact number. Unique email constraint in DB.",
+    "priority": "P1",
+    "platform": "Backend",
+    "milestone": "M1",
+    "owner": "Dev 1",
+    "estimate": "2 hrs",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d19",
+    "col": "done",
+    "title": "M1-05: Frontend Auth Context",
+    "desc": "Role in sessionStorage. AuthGuard.js: isLoggedIn, getRole, requireRole. Profile route guarded.",
+    "priority": "P0",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "2 hrs",
+    "blocked": "M1-03",
+    "ac": []
+  },
+  {
+    "id": "d20",
+    "col": "done",
+    "title": "M1-06: Admin Dashboard APIs",
+    "desc": "AdminController: dashboard stats, restaurants, orders, users. PUT status + role. All ADMIN-guarded.",
+    "priority": "P1",
+    "platform": "Backend",
+    "milestone": "M1",
+    "owner": "Dev 1",
+    "estimate": "6 hrs",
+    "blocked": "M1-03",
+    "ac": []
+  },
+  {
+    "id": "d21",
+    "col": "done",
+    "title": "M1-07: Admin Dashboard Frontend",
+    "desc": "/admin route with sidebar. Stats tiles, Restaurants (approve/suspend), Users (role change), Orders. Pagination.",
+    "priority": "P1",
+    "platform": "Web",
+    "milestone": "M1",
+    "owner": "Dev 2",
+    "estimate": "8 hrs",
+    "blocked": "M1-06, M1-05",
+    "ac": []
+  },
+  {
+    "id": "d22",
+    "col": "done",
+    "title": "M1-08: Backend Test Coverage",
+    "desc": "RoleGuard tests, AdminController tests, email login tests. All 107+ tests pass.",
+    "priority": "P1",
+    "platform": "QA",
+    "milestone": "M1",
+    "owner": "QA",
+    "estimate": "3 hrs",
+    "blocked": "M1-03, M1-06",
+    "ac": []
+  },
+  {
+    "id": "d23",
+    "col": "done",
+    "title": "M1-09: Frontend Test Coverage",
+    "desc": "AuthGuard tests, Login page renders, Admin route guard. npm test passes.",
+    "priority": "P1",
+    "platform": "QA",
+    "milestone": "M1",
+    "owner": "QA",
+    "estimate": "2 hrs",
+    "blocked": "M1-05, M1-07",
+    "ac": []
+  },
+  {
+    "id": "d24",
+    "col": "done",
+    "title": "BUG-001: VS Code JDT Overwrites",
+    "desc": "VS Code Java ext overwrote Maven classes. Fixed with .vscode/settings.json.",
+    "priority": "P2",
+    "platform": "Backend",
+    "milestone": "M1",
+    "owner": "Dev 1",
+    "estimate": "30 min",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d25",
+    "col": "done",
+    "title": "BUG-002: DB Migrations V3-V5",
+    "desc": "SQL migrations for role, email unique, restaurant status not applied. Fixed manually.",
+    "priority": "P0",
+    "platform": "Backend",
+    "milestone": "M1",
+    "owner": "Dev 1",
+    "estimate": "15 min",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d26",
+    "col": "done",
+    "title": "M1-10: Milestone 1 E2E",
+    "desc": "Full E2E: Google SSO, order, profile, admin CRUD, email login, env config, zero errors.",
+    "priority": "P0",
+    "platform": "QA",
+    "milestone": "M1",
+    "owner": "QA",
+    "estimate": "3 hrs",
+    "blocked": "M1-01 to M1-09",
+    "ac": []
+  },
+  {
+    "id": "d27",
+    "col": "done",
+    "title": "BUG-003: Home Crash on API Error",
+    "desc": "Home.js crashed on non-200 response. Added response.ok check, fallback to [].",
+    "priority": "P0",
+    "platform": "Web",
+    "milestone": "M2",
+    "owner": "Dev 2",
+    "estimate": "30 min",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "d28",
+    "col": "done",
+    "title": "M2-01: Restaurant Rating",
+    "desc": "MUI Rating on DetailsRCard. Logged-in only. PUT /api/restaurant/{id}?customer_rating=X. Snackbar.",
+    "priority": "P1",
+    "platform": "Web",
+    "milestone": "M2",
+    "owner": "Dev 2",
+    "estimate": "2 hrs",
+    "blocked": "M1",
+    "ac": []
+  },
+  {
+    "id": "d29",
+    "col": "done",
+    "title": "M2-02: Coupon Support",
+    "desc": "Coupon field + Apply in OrderSummaryCard. Valid = green chip + discount. Invalid = error. Remove option.",
+    "priority": "P1",
+    "platform": "Web",
+    "milestone": "M2",
+    "owner": "Dev 2",
+    "estimate": "2 hrs",
+    "blocked": "M1",
+    "ac": []
+  },
+  {
+    "id": "d30",
+    "col": "done",
+    "title": "M2 QA: Rating + Coupon E2E",
+    "desc": "End-to-end validation of rating and coupon features.",
+    "priority": "P1",
+    "platform": "QA",
+    "milestone": "M2",
+    "owner": "QA",
+    "estimate": "2 hrs",
+    "blocked": "M2-01, M2-02",
+    "ac": []
+  },
+  {
+    "id": "b01",
+    "col": "review",
+    "title": "M3-01: Admin Creates Restaurants + Menus",
+    "desc": "Admin can create a restaurant and its full menu through the admin panel. This is how we onboard the first 10-20 restaurants before the owner portal exists.",
+    "priority": "P0",
+    "platform": "Both",
+    "milestone": "M3",
+    "owner": "Dev 1 + Dev 2",
+    "estimate": "6 hrs",
+    "blocked": "M1-06, M1-07",
+    "ac": [
+      {
+        "t": "POST /api/admin/restaurants — ADMIN creates restaurant (name, photo_url, avg_price, address)",
+        "d": false
+      },
+      {
+        "t": "POST /api/admin/restaurants/{uuid}/items — ADMIN adds menu items to any restaurant",
+        "d": false
+      },
+      {
+        "t": "PUT /api/admin/restaurants/{uuid}/items/{itemUuid} — ADMIN edits any menu item",
+        "d": false
+      },
+      {
+        "t": "DELETE /api/admin/restaurants/{uuid}/items/{itemUuid} — ADMIN removes menu item",
+        "d": false
+      },
+      {
+        "t": "POST /api/admin/restaurants/{uuid}/categories — ADMIN assigns categories",
+        "d": false
+      },
+      {
+        "t": "Admin Dashboard > Restaurants tab: \"Add Restaurant\" button opens creation form",
+        "d": false
+      },
+      {
+        "t": "Admin Dashboard > Restaurant detail view: menu item CRUD (add/edit/delete)",
+        "d": false
+      },
+      {
+        "t": "New restaurant defaults to status = ACTIVE",
+        "d": false
+      },
+      {
+        "t": "Admin can create a restaurant + 20 menu items in under 15 minutes",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b02",
+    "col": "review",
+    "title": "M3-02: PENDING Approval Flow",
+    "desc": "Self-registered restaurants land in PENDING, not ACTIVE. Admin reviews and approves. Marketplace trust gate.",
+    "priority": "P0",
+    "platform": "Both",
+    "milestone": "M3",
+    "owner": "Dev 1 + Dev 2",
+    "estimate": "3 hrs",
+    "blocked": "M3-01",
+    "ac": [
+      {
+        "t": "Restaurant status extended: PENDING | ACTIVE | SUSPENDED",
+        "d": false
+      },
+      {
+        "t": "Self-registered restaurants default to PENDING",
+        "d": false
+      },
+      {
+        "t": "Admin-created restaurants default to ACTIVE (skip approval)",
+        "d": false
+      },
+      {
+        "t": "GET /api/restaurant (public) excludes PENDING restaurants",
+        "d": false
+      },
+      {
+        "t": "Admin Dashboard > Restaurants: filter by status, \"Approve\" button for PENDING",
+        "d": false
+      },
+      {
+        "t": "PUT /api/admin/restaurants/{uuid}/status accepts PENDING, ACTIVE, SUSPENDED",
+        "d": false
+      },
+      {
+        "t": "Restaurant owner sees \"Pending approval\" banner when PENDING",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b03",
+    "col": "review",
+    "title": "M3-03: Restaurant Owner Invite Link",
+    "desc": "Admin generates unique signup link per restaurant. Owner clicks, creates account, auto-linked as RESTAURANT_OWNER. Single-use, 7-day expiry.",
+    "priority": "P1",
+    "platform": "Both",
+    "milestone": "M3",
+    "owner": "Dev 1 + Dev 2",
+    "estimate": "3 hrs",
+    "blocked": "M3-01",
+    "ac": [
+      {
+        "t": "POST /api/admin/restaurants/{uuid}/invite — generates unique invite token (UUID, 7-day expiry)",
+        "d": false
+      },
+      {
+        "t": "DB migration: invite_tokens table (id, token, restaurant_id, expires_at, used_at)",
+        "d": false
+      },
+      {
+        "t": "GET /api/invite/{token} — public, returns restaurant name + invite status",
+        "d": false
+      },
+      {
+        "t": "Frontend: /invite/{token} route — shows restaurant name + \"Create account to manage\"",
+        "d": false
+      },
+      {
+        "t": "On signup/login via invite: user auto-assigned RESTAURANT_OWNER + linked to restaurant",
+        "d": false
+      },
+      {
+        "t": "Invite token marked as used (single-use)",
+        "d": false
+      },
+      {
+        "t": "Admin Dashboard > Restaurant detail: \"Generate Invite Link\" button, copyable URL",
+        "d": false
+      },
+      {
+        "t": "Expired/used token shows clear error message",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b04",
+    "col": "review",
+    "title": "M3-04: Owner Portal — Backend",
+    "desc": "Self-serve portal. Owners without invite create new restaurant (PENDING). Owners via invite manage pre-created restaurant.",
+    "priority": "P1",
+    "platform": "Backend",
+    "milestone": "M3",
+    "owner": "Dev 1",
+    "estimate": "8 hrs",
+    "blocked": "M3-02",
+    "ac": [
+      {
+        "t": "DB migration: ALTER TABLE restaurant ADD COLUMN owner_id REFERENCES customer(id)",
+        "d": false
+      },
+      {
+        "t": "POST /api/restaurant — RESTAURANT_OWNER creates restaurant (status=PENDING)",
+        "d": false
+      },
+      {
+        "t": "PUT /api/restaurant/{uuid} — owner edits own restaurant only",
+        "d": false
+      },
+      {
+        "t": "POST /api/restaurant/{uuid}/item — add menu item",
+        "d": false
+      },
+      {
+        "t": "PUT /api/restaurant/{uuid}/item/{itemUuid} — edit item",
+        "d": false
+      },
+      {
+        "t": "DELETE /api/restaurant/{uuid}/item/{itemUuid} — remove item",
+        "d": false
+      },
+      {
+        "t": "GET /api/restaurant/mine — list restaurants owned by current user",
+        "d": false
+      },
+      {
+        "t": "403 if restaurant owner_id does not match authenticated user",
+        "d": false
+      },
+      {
+        "t": "New RestaurantOwnerController.java",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b05",
+    "col": "review",
+    "title": "M3-05: Owner Portal — Frontend",
+    "desc": "/my-restaurant route with RESTAURANT_OWNER guard. Create/edit restaurant, menu CRUD, orders, status badge.",
+    "priority": "P1",
+    "platform": "Web",
+    "milestone": "M3",
+    "owner": "Dev 2",
+    "estimate": "8 hrs",
+    "blocked": "M3-04, M1-05",
+    "ac": [
+      {
+        "t": "/my-restaurant route with RESTAURANT_OWNER role guard",
+        "d": false
+      },
+      {
+        "t": "\"My Restaurants\" list page (shows status badge: PENDING/ACTIVE/SUSPENDED)",
+        "d": false
+      },
+      {
+        "t": "Create restaurant form (name, photo URL, avg price, address)",
+        "d": false
+      },
+      {
+        "t": "Edit restaurant details",
+        "d": false
+      },
+      {
+        "t": "Menu item management: add / edit / delete with name, price, type (VEG/NON_VEG)",
+        "d": false
+      },
+      {
+        "t": "Incoming orders list for their restaurant(s)",
+        "d": false
+      },
+      {
+        "t": "\"Pending approval\" banner when restaurant is PENDING",
+        "d": false
+      },
+      {
+        "t": "Uses existing app theme (Poppins, coral-red)",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b06",
+    "col": "review",
+    "title": "M3-06: /for-restaurants Landing Page",
+    "desc": "Public marketing page. Hero + benefits + CTA. \"Zero commission for 3 months.\" Drives self-serve signups.",
+    "priority": "P2",
+    "platform": "Web",
+    "milestone": "M3",
+    "owner": "Dev 2",
+    "estimate": "3 hrs",
+    "blocked": "M3-04",
+    "ac": [
+      {
+        "t": "/for-restaurants route — public, no auth required",
+        "d": false
+      },
+      {
+        "t": "Hero: \"Reach more hungry customers\" + \"Zero commission for first 3 months\"",
+        "d": false
+      },
+      {
+        "t": "3 benefit sections (more orders, easy menu management, real-time insights)",
+        "d": false
+      },
+      {
+        "t": "\"Get Started\" CTA redirects to /login?role=restaurant_owner",
+        "d": false
+      },
+      {
+        "t": "Login page detects param, auto-assigns RESTAURANT_OWNER after signup",
+        "d": false
+      },
+      {
+        "t": "Footer link: \"Partner with us\" pointing to /for-restaurants",
+        "d": false
+      },
+      {
+        "t": "Mobile responsive, matches app theme",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b07",
+    "col": "review",
+    "title": "M3-07: Docker Compose",
+    "desc": "docker-compose.yml at root. PostgreSQL 17 (seeded), backend + frontend containers. Fresh clone to running app.",
+    "priority": "P1",
+    "platform": "Infra",
+    "milestone": "M3",
+    "owner": "Dev 1",
+    "estimate": "3 hrs",
+    "blocked": "M1-02",
+    "ac": [
+      {
+        "t": "docker-compose.yml at project root",
+        "d": false
+      },
+      {
+        "t": "PostgreSQL 17 container (port 5434, restaurantdb, auto-seeded with tables.sql + migrations)",
+        "d": false
+      },
+      {
+        "t": "Backend container (waits for DB health check, builds with Maven)",
+        "d": false
+      },
+      {
+        "t": "Frontend container (nginx serving React build)",
+        "d": false
+      },
+      {
+        "t": "docker compose up on fresh clone = app running at localhost:3000",
+        "d": false
+      },
+      {
+        "t": ".dockerignore files to exclude node_modules, target, .git",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b08",
+    "col": "progress",
+    "title": "M3-08: QA — Milestone 3 E2E",
+    "desc": "Full E2E: admin creates restaurant + menu, invite link flow, owner self-serve, PENDING approval, Docker.",
+    "priority": "P0",
+    "platform": "QA",
+    "milestone": "M3",
+    "owner": "QA",
+    "estimate": "3 hrs",
+    "blocked": "M3-01 to M3-07",
+    "ac": [
+      {
+        "t": "Admin creates restaurant + 10 menu items in under 15 minutes",
+        "d": false
+      },
+      {
+        "t": "Admin generates invite link, opens in incognito, signs up = auto-linked as owner",
+        "d": false
+      },
+      {
+        "t": "Owner creates restaurant via self-serve = status PENDING, admin approves = visible on home",
+        "d": false
+      },
+      {
+        "t": "Owner edits menu items on their own restaurant only",
+        "d": false
+      },
+      {
+        "t": "Owner cannot access another owner restaurant (403)",
+        "d": false
+      },
+      {
+        "t": "PENDING restaurants do not appear in public listing",
+        "d": false
+      },
+      {
+        "t": "/for-restaurants page renders, CTA works",
+        "d": false
+      },
+      {
+        "t": "Docker Compose: fresh clone, docker compose up, app running",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b09",
+    "col": "review",
+    "title": "M4-01: Order Tracking",
+    "desc": "Order status flow: PLACED > CONFIRMED > PREPARING > OUT_FOR_DELIVERY > DELIVERED. MUI Stepper. 30s polling.",
+    "priority": "P1",
+    "platform": "Both",
+    "milestone": "M4",
+    "owner": "Dev 1 + Dev 2",
+    "estimate": "2-3 days",
+    "blocked": "M1-03",
+    "ac": [
+      {
+        "t": "DB migration: ALTER TABLE orders ADD COLUMN status VARCHAR(30) DEFAULT PLACED NOT NULL",
+        "d": false
+      },
+      {
+        "t": "Status flow: PLACED > CONFIRMED > PREPARING > OUT_FOR_DELIVERY > DELIVERED",
+        "d": false
+      },
+      {
+        "t": "GET /api/order/{uuid}/status — returns current status",
+        "d": false
+      },
+      {
+        "t": "PUT /api/order/{uuid}/status — ADMIN or RESTAURANT_OWNER can update",
+        "d": false
+      },
+      {
+        "t": "Frontend: tracking page with MUI Stepper showing order progress",
+        "d": false
+      },
+      {
+        "t": "30s polling for status updates",
+        "d": false
+      },
+      {
+        "t": "Order confirmation page redirects to tracking after placement",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b10",
+    "col": "review",
+    "title": "M4-02: Favorites / Wishlist",
+    "desc": "Heart icon on restaurant cards. Favorites tab on Profile. POST/DELETE /customer/favorites.",
+    "priority": "P2",
+    "platform": "Both",
+    "milestone": "M4",
+    "owner": "Dev 2",
+    "estimate": "4 hrs",
+    "blocked": "M1",
+    "ac": [
+      {
+        "t": "DB: favorites table (customer_id + restaurant_id, unique constraint)",
+        "d": false
+      },
+      {
+        "t": "POST /api/customer/favorites/{restaurantUuid} — add",
+        "d": false
+      },
+      {
+        "t": "DELETE /api/customer/favorites/{restaurantUuid} — remove",
+        "d": false
+      },
+      {
+        "t": "GET /api/customer/favorites — list",
+        "d": false
+      },
+      {
+        "t": "Heart icon on restaurant cards (filled = favorited)",
+        "d": false
+      },
+      {
+        "t": "Favorites tab on Profile page",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b11",
+    "col": "backlog",
+    "title": "M5-01: React Native Scaffold",
+    "desc": "Expo project. Home, Details, Checkout, Profile, Login. Google SSO via AuthSession. Coral-red theme.",
+    "priority": "P1",
+    "platform": "Mobile",
+    "milestone": "M5",
+    "owner": "Dev 2",
+    "estimate": "1-2 weeks",
+    "blocked": "M4-01",
+    "ac": [
+      {
+        "t": "Expo project in food-ordering-app-mobile/ directory",
+        "d": false
+      },
+      {
+        "t": "Shared API config (same endpoints as web)",
+        "d": false
+      },
+      {
+        "t": "Screens: Home, Restaurant Details, Checkout, Profile, Login",
+        "d": false
+      },
+      {
+        "t": "Google SSO via Expo AuthSession",
+        "d": false
+      },
+      {
+        "t": "Matches web theme (Poppins, coral-red palette)",
+        "d": false
+      },
+      {
+        "t": "Runs on iOS Simulator and Android Emulator",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b12",
+    "col": "backlog",
+    "title": "M5-02: Push Notifications",
+    "desc": "Opt-in prompt. Order placed = push. Backend device_tokens table. Expo Notifications or FCM.",
+    "priority": "P2",
+    "platform": "Mobile",
+    "milestone": "M5",
+    "owner": "Dev 2",
+    "estimate": "1 day",
+    "blocked": "M5-01",
+    "ac": [
+      {
+        "t": "Opt-in permission prompt on first mobile launch",
+        "d": false
+      },
+      {
+        "t": "Order placed = push confirmation",
+        "d": false
+      },
+      {
+        "t": "Backend: device_tokens table, register/unregister endpoints",
+        "d": false
+      },
+      {
+        "t": "Uses Expo Notifications or Firebase Cloud Messaging",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "b13",
+    "col": "review",
+    "title": "M5-03: Bulk Restaurant Import (CSV)",
+    "desc": "POST /admin/restaurants/import. CSV upload for chains. Validation + error report. Admin UI.",
+    "priority": "P2",
+    "platform": "Both",
+    "milestone": "M5",
+    "owner": "Dev 1",
+    "estimate": "4 hrs",
+    "blocked": "M3-01",
+    "ac": [
+      {
+        "t": "POST /api/admin/restaurants/import — accepts CSV file (multipart)",
+        "d": false
+      },
+      {
+        "t": "CSV columns: name, photo_url, avg_price, address fields, category, status",
+        "d": false
+      },
+      {
+        "t": "Validation: skip rows with missing required fields, return error report",
+        "d": false
+      },
+      {
+        "t": "Admin Dashboard: \"Import Restaurants\" button, file upload + preview + confirm",
+        "d": false
+      },
+      {
+        "t": "Import 50 restaurants in under 1 minute",
+        "d": false
+      }
+    ]
+  },
+  {
+    "id": "f01",
+    "col": "backlog",
+    "title": "Driver Role + Delivery Assignment",
+    "desc": "Partner with 3rd-party fleet first (Dunzo/Shadowfax). Build driver logistics only after proving model.",
+    "priority": "P2",
+    "platform": "Both",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "3 days",
+    "blocked": "M5-01, M1-03",
+    "ac": []
+  },
+  {
+    "id": "f02",
+    "col": "backlog",
+    "title": "Forgot Password / Reset Email",
+    "desc": "Password reset flow via email. Needs email service (SendGrid or SES).",
+    "priority": "P2",
+    "platform": "Both",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "f03",
+    "col": "backlog",
+    "title": "Facebook / Apple OAuth2",
+    "desc": "Consumer SSO providers — higher priority than GitHub for food app.",
+    "priority": "P2",
+    "platform": "Both",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "f04",
+    "col": "backlog",
+    "title": "Item Image Upload",
+    "desc": "Restaurant owners upload menu item photos. Needs file storage (S3 or local).",
+    "priority": "P2",
+    "platform": "Both",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "f05",
+    "col": "backlog",
+    "title": "Restaurant Hours / Availability",
+    "desc": "Opening hours, closed days. Backend schema + frontend display.",
+    "priority": "P2",
+    "platform": "Both",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "f06",
+    "col": "backlog",
+    "title": "Search by Cuisine Type",
+    "desc": "Filter restaurants by cuisine (Italian, Chinese, etc). Backend filter + frontend UI.",
+    "priority": "P2",
+    "platform": "Web",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "f07",
+    "col": "backlog",
+    "title": "Multi-Language (i18n)",
+    "desc": "Internationalization with react-intl. Start with English + Hindi.",
+    "priority": "P2",
+    "platform": "Web",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "f08",
+    "col": "backlog",
+    "title": "Payment Gateway",
+    "desc": "Stripe or Razorpay integration. Replace mock payment.",
+    "priority": "P1",
+    "platform": "Both",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "f09",
+    "col": "backlog",
+    "title": "Restaurant Owner Analytics",
+    "desc": "Revenue charts, popular items, order trends for restaurant owners.",
+    "priority": "P2",
+    "platform": "Web",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "f10",
+    "col": "backlog",
+    "title": "Delivery Fee Calculation",
+    "desc": "Distance-based delivery pricing. Needs geocoding or zone-based logic.",
+    "priority": "P2",
+    "platform": "Backend",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "f11",
+    "col": "backlog",
+    "title": "Promo / Marketing Campaigns",
+    "desc": "Push notifications + in-app banners for promotions.",
+    "priority": "P2",
+    "platform": "Both",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "f12",
+    "col": "backlog",
+    "title": "Spring Security Migration",
+    "desc": "Replace hand-rolled auth with Spring Security if manual checks become painful.",
+    "priority": "P2",
+    "platform": "Backend",
+    "milestone": "Future",
+    "owner": "",
+    "estimate": "",
+    "blocked": "",
+    "ac": []
+  }
+]
