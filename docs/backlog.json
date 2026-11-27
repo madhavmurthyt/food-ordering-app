@@ -1089,7 +1089,7 @@
   },
   {
     "id": "BUG-004",
-    "col": "backlog",
+    "col": "done",
     "title": "BUG-004: addMenuItem 500 — Hibernate flush order",
     "desc": "POST /admin/restaurants/{uuid}/items and POST /restaurant/{uuid}/item both return 500. Root cause: AdminService.addMenuItem and RestaurantOwnerService.addMenuItem call itemDao.saveItem(item) (persist) then immediately use item.getId() in a native INSERT into restaurant_item. Hibernate has not flushed yet, so getId() returns null, violating the NOT NULL constraint on restaurant_item.item_id. Fix: add entityManager.flush() after persist, or use entityManager.persist + flush, or switch to a JPQL/managed relationship instead of a native query.",
     "priority": "P0",
@@ -1103,8 +1103,8 @@
   {
     "id": "BUG-005",
     "col": "backlog",
-    "title": "BUG-005: Seed item type=0/1 incompatible with ItemType enum",
-    "desc": "All seed data items in the item table have type='0' (VEG) or '1' (NON_VEG) as numeric strings, but the ItemEntity maps the type column to ItemType enum which expects 'VEG'/'NON_VEG'. When Hibernate loads a seed item (e.g. during editMenuItem), it fails to deserialize the type column, causing a 500. Fix: either (a) add a data migration V__fix_item_types.sql to UPDATE item SET type='VEG' WHERE type='0' and type='NON_VEG' WHERE type='1', or (b) add an AttributeConverter for ItemType that handles both formats.",
+    "title": "BUG-005: ItemEntity missing @Enumerated(EnumType.STRING)",
+    "desc": "REOPENED: V11 migration converted item.type from 0/1 to VEG/NON_VEG (data fix done), but ItemEntity.type field has no @Enumerated annotation, so Hibernate defaults to EnumType.ORDINAL and expects a byte. Result: PSQLException 'Bad value for type byte : NON_VEG' on GET /api/restaurant and any query that loads items. Fix: add @Enumerated(EnumType.STRING) to the type field in ItemEntity.java. This breaks the entire public restaurant listing.",
     "priority": "P0",
     "platform": "Backend",
     "milestone": "M3",
