@@ -403,7 +403,7 @@
     "ac": [
       {
         "t": "POST /api/admin/restaurants — ADMIN creates restaurant (name, photo_url, avg_price, address)",
-        "d": false
+        "d": true
       },
       {
         "t": "POST /api/admin/restaurants/{uuid}/items — ADMIN adds menu items to any restaurant",
@@ -415,7 +415,7 @@
       },
       {
         "t": "DELETE /api/admin/restaurants/{uuid}/items/{itemUuid} — ADMIN removes menu item",
-        "d": false
+        "d": true
       },
       {
         "t": "POST /api/admin/restaurants/{uuid}/categories — ADMIN assigns categories",
@@ -423,15 +423,15 @@
       },
       {
         "t": "Admin Dashboard > Restaurants tab: \"Add Restaurant\" button opens creation form",
-        "d": false
+        "d": true
       },
       {
         "t": "Admin Dashboard > Restaurant detail view: menu item CRUD (add/edit/delete)",
-        "d": false
+        "d": true
       },
       {
         "t": "New restaurant defaults to status = ACTIVE",
-        "d": false
+        "d": true
       },
       {
         "t": "Admin can create a restaurant + 20 menu items in under 15 minutes",
@@ -441,7 +441,7 @@
   },
   {
     "id": "M3-02",
-    "col": "review",
+    "col": "done",
     "title": "M3-02: PENDING Approval Flow",
     "desc": "Self-registered restaurants land in PENDING, not ACTIVE. Admin reviews and approves. Marketplace trust gate.",
     "priority": "P0",
@@ -453,37 +453,37 @@
     "ac": [
       {
         "t": "Restaurant status extended: PENDING | ACTIVE | SUSPENDED",
-        "d": false
+        "d": true
       },
       {
         "t": "Self-registered restaurants default to PENDING",
-        "d": false
+        "d": true
       },
       {
         "t": "Admin-created restaurants default to ACTIVE (skip approval)",
-        "d": false
+        "d": true
       },
       {
         "t": "GET /api/restaurant (public) excludes PENDING restaurants",
-        "d": false
+        "d": true
       },
       {
         "t": "Admin Dashboard > Restaurants: filter by status, \"Approve\" button for PENDING",
-        "d": false
+        "d": true
       },
       {
         "t": "PUT /api/admin/restaurants/{uuid}/status accepts PENDING, ACTIVE, SUSPENDED",
-        "d": false
+        "d": true
       },
       {
         "t": "Restaurant owner sees \"Pending approval\" banner when PENDING",
-        "d": false
+        "d": true
       }
     ]
   },
   {
     "id": "M3-03",
-    "col": "review",
+    "col": "done",
     "title": "M3-03: Restaurant Owner Invite Link",
     "desc": "Admin generates unique signup link per restaurant. Owner clicks, creates account, auto-linked as RESTAURANT_OWNER. Single-use, 7-day expiry.",
     "priority": "P1",
@@ -495,35 +495,35 @@
     "ac": [
       {
         "t": "POST /api/admin/restaurants/{uuid}/invite — generates unique invite token (UUID, 7-day expiry)",
-        "d": false
+        "d": true
       },
       {
         "t": "DB migration: invite_tokens table (id, token, restaurant_id, expires_at, used_at)",
-        "d": false
+        "d": true
       },
       {
         "t": "GET /api/invite/{token} — public, returns restaurant name + invite status",
-        "d": false
+        "d": true
       },
       {
         "t": "Frontend: /invite/{token} route — shows restaurant name + \"Create account to manage\"",
-        "d": false
+        "d": true
       },
       {
         "t": "On signup/login via invite: user auto-assigned RESTAURANT_OWNER + linked to restaurant",
-        "d": false
+        "d": true
       },
       {
         "t": "Invite token marked as used (single-use)",
-        "d": false
+        "d": true
       },
       {
         "t": "Admin Dashboard > Restaurant detail: \"Generate Invite Link\" button, copyable URL",
-        "d": false
+        "d": true
       },
       {
         "t": "Expired/used token shows clear error message",
-        "d": false
+        "d": true
       }
     ]
   },
@@ -541,11 +541,11 @@
     "ac": [
       {
         "t": "DB migration: ALTER TABLE restaurant ADD COLUMN owner_id REFERENCES customer(id)",
-        "d": false
+        "d": true
       },
       {
         "t": "POST /api/restaurant — RESTAURANT_OWNER creates restaurant (status=PENDING)",
-        "d": false
+        "d": true
       },
       {
         "t": "PUT /api/restaurant/{uuid} — owner edits own restaurant only",
@@ -561,19 +561,19 @@
       },
       {
         "t": "DELETE /api/restaurant/{uuid}/item/{itemUuid} — remove item",
-        "d": false
+        "d": true
       },
       {
         "t": "GET /api/restaurant/mine — list restaurants owned by current user",
-        "d": false
+        "d": true
       },
       {
         "t": "403 if restaurant owner_id does not match authenticated user",
-        "d": false
+        "d": true
       },
       {
         "t": "New RestaurantOwnerController.java",
-        "d": false
+        "d": true
       }
     ]
   },
@@ -591,15 +591,15 @@
     "ac": [
       {
         "t": "/my-restaurant route with RESTAURANT_OWNER role guard",
-        "d": false
+        "d": true
       },
       {
         "t": "\"My Restaurants\" list page (shows status badge: PENDING/ACTIVE/SUSPENDED)",
-        "d": false
+        "d": true
       },
       {
         "t": "Create restaurant form (name, photo URL, avg price, address)",
-        "d": false
+        "d": true
       },
       {
         "t": "Edit restaurant details",
@@ -615,17 +615,17 @@
       },
       {
         "t": "\"Pending approval\" banner when restaurant is PENDING",
-        "d": false
+        "d": true
       },
       {
         "t": "Uses existing app theme (Poppins, coral-red)",
-        "d": false
+        "d": true
       }
     ]
   },
   {
     "id": "M3-06",
-    "col": "review",
+    "col": "done",
     "title": "M3-06: /for-restaurants Landing Page",
     "desc": "Public marketing page. Hero + benefits + CTA. \"Zero commission for 3 months.\" Drives self-serve signups.",
     "priority": "P2",
@@ -637,31 +637,31 @@
     "ac": [
       {
         "t": "/for-restaurants route — public, no auth required",
-        "d": false
+        "d": true
       },
       {
         "t": "Hero: \"Reach more hungry customers\" + \"Zero commission for first 3 months\"",
-        "d": false
+        "d": true
       },
       {
         "t": "3 benefit sections (more orders, easy menu management, real-time insights)",
-        "d": false
+        "d": true
       },
       {
         "t": "\"Get Started\" CTA redirects to /login?role=restaurant_owner",
-        "d": false
+        "d": true
       },
       {
         "t": "Login page detects param, auto-assigns RESTAURANT_OWNER after signup",
-        "d": false
+        "d": true
       },
       {
         "t": "Footer link: \"Partner with us\" pointing to /for-restaurants",
-        "d": false
+        "d": true
       },
       {
         "t": "Mobile responsive, matches app theme",
-        "d": false
+        "d": true
       }
     ]
   },
@@ -679,19 +679,19 @@
     "ac": [
       {
         "t": "docker-compose.yml at project root",
-        "d": false
+        "d": true
       },
       {
         "t": "PostgreSQL 17 container (port 5434, restaurantdb, auto-seeded with tables.sql + migrations)",
-        "d": false
+        "d": true
       },
       {
         "t": "Backend container (waits for DB health check, builds with Maven)",
-        "d": false
+        "d": true
       },
       {
         "t": "Frontend container (nginx serving React build)",
-        "d": false
+        "d": true
       },
       {
         "t": "docker compose up on fresh clone = app running at localhost:3000",
@@ -699,7 +699,7 @@
       },
       {
         "t": ".dockerignore files to exclude node_modules, target, .git",
-        "d": false
+        "d": true
       }
     ]
   },
@@ -721,11 +721,11 @@
       },
       {
         "t": "Admin generates invite link, opens in incognito, signs up = auto-linked as owner",
-        "d": false
+        "d": true
       },
       {
         "t": "Owner creates restaurant via self-serve = status PENDING, admin approves = visible on home",
-        "d": false
+        "d": true
       },
       {
         "t": "Owner edits menu items on their own restaurant only",
@@ -733,15 +733,15 @@
       },
       {
         "t": "Owner cannot access another owner restaurant (403)",
-        "d": false
+        "d": true
       },
       {
         "t": "PENDING restaurants do not appear in public listing",
-        "d": false
+        "d": true
       },
       {
         "t": "/for-restaurants page renders, CTA works",
-        "d": false
+        "d": true
       },
       {
         "t": "Docker Compose: fresh clone, docker compose up, app running",
@@ -1084,6 +1084,32 @@
     "milestone": "Future",
     "owner": "",
     "estimate": "",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "BUG-004",
+    "col": "backlog",
+    "title": "BUG-004: addMenuItem 500 — Hibernate flush order",
+    "desc": "POST /admin/restaurants/{uuid}/items and POST /restaurant/{uuid}/item both return 500. Root cause: AdminService.addMenuItem and RestaurantOwnerService.addMenuItem call itemDao.saveItem(item) (persist) then immediately use item.getId() in a native INSERT into restaurant_item. Hibernate has not flushed yet, so getId() returns null, violating the NOT NULL constraint on restaurant_item.item_id. Fix: add entityManager.flush() after persist, or use entityManager.persist + flush, or switch to a JPQL/managed relationship instead of a native query.",
+    "priority": "P0",
+    "platform": "Backend",
+    "milestone": "M3",
+    "owner": "Dev 1",
+    "estimate": "30 min",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "BUG-005",
+    "col": "backlog",
+    "title": "BUG-005: Seed item type=0/1 incompatible with ItemType enum",
+    "desc": "All seed data items in the item table have type='0' (VEG) or '1' (NON_VEG) as numeric strings, but the ItemEntity maps the type column to ItemType enum which expects 'VEG'/'NON_VEG'. When Hibernate loads a seed item (e.g. during editMenuItem), it fails to deserialize the type column, causing a 500. Fix: either (a) add a data migration V__fix_item_types.sql to UPDATE item SET type='VEG' WHERE type='0' and type='NON_VEG' WHERE type='1', or (b) add an AttributeConverter for ItemType that handles both formats.",
+    "priority": "P0",
+    "platform": "Backend",
+    "milestone": "M3",
+    "owner": "Dev 1",
+    "estimate": "30 min",
     "blocked": "",
     "ac": []
   }
