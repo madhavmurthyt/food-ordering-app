@@ -1103,8 +1103,8 @@
   {
     "id": "BUG-005",
     "col": "backlog",
-    "title": "BUG-005: ItemEntity missing @Enumerated(EnumType.STRING)",
-    "desc": "REOPENED: V11 migration converted item.type from 0/1 to VEG/NON_VEG (data fix done), but ItemEntity.type field has no @Enumerated annotation, so Hibernate defaults to EnumType.ORDINAL and expects a byte. Result: PSQLException 'Bad value for type byte : NON_VEG' on GET /api/restaurant and any query that loads items. Fix: add @Enumerated(EnumType.STRING) to the type field in ItemEntity.java. This breaks the entire public restaurant listing.",
+    "title": "BUG-005: ItemEntity.type @Size(max=10) incompatible with enum",
+    "desc": "REOPENED AGAIN: @Enumerated(EnumType.STRING) was added (GET /restaurant now works), but @Size(max=10) remains on the type field. @Size has no validator for enums → UnexpectedTypeException on any item INSERT (addMenuItem). Fix: remove @Size(max=10) from the type field in ItemEntity.java (the column length is enforced by the DB, not the validator).",
     "priority": "P0",
     "platform": "Backend",
     "milestone": "M3",
