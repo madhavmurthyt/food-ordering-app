@@ -23,9 +23,13 @@ and maintain the API contract.
 
 1. Read `docs/backlog.json`.
 2. Pick cards where `owner` is `"Dev 1"` or `"Dev 1 + Dev 2"`.
-3. The card's parent feature must have `"po": "APPROVED"`. Skip `"NEW"` or
-   `"STORIES_READY"` cards — those are not ready for development.
-4. Respect `blocked` — if a blocking card is not in `"done"`, skip the card.
+3. Approval: if the card has a `parent`, that parent card must have
+   `"po": "APPROVED"`. Never pick cards whose own `po` is `"NEW"` or
+   `"STORIES_READY"`. Cards with no `po` and no `parent` field are
+   pre-existing and already approved.
+4. Respect `blocked`: it is a comma-separated list of card `id`s or milestone
+   codes (e.g. `M1`). Skip the card unless every listed card is in `"done"`;
+   a milestone code means every card with that `milestone` is in `"done"`.
 5. Pick the highest-priority unblocked card first (P0 > P1 > P2).
 
 ## Workflow

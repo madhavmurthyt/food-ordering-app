@@ -23,7 +23,12 @@ against the running app, and file bugs.
 2. Pick QA-owned cards (E2E validation cards, e.g. `M6-08: QA — Milestone 6 E2E`).
 3. Also pick any card in `col: "review"` that needs validation — verify its
    acceptance criteria against the running app before moving it to `"done"`.
-4. The card's parent feature must have `"po": "APPROVED"`.
+4. Approval: if the card has a `parent`, that parent card must have
+   `"po": "APPROVED"`. Cards with no `po` and no `parent` field are
+   pre-existing and already approved.
+5. `blocked` is a comma-separated list of card `id`s or milestone codes
+   (e.g. `M1` = every card in that milestone). Validate E2E cards only when
+   every blocking card is in `"review"` or `"done"`.
 
 ## Workflow
 

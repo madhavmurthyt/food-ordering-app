@@ -169,7 +169,7 @@
     "ac": []
   },
   {
-    "id": "d14",
+    "id": "M1-01",
     "col": "done",
     "title": "M1-01: Fix OrderController Bug",
     "desc": "Fixed flatBuildingName mapped to address UUID instead of flat/building number",
@@ -182,7 +182,7 @@
     "ac": []
   },
   {
-    "id": "d15",
+    "id": "M1-02-FE",
     "col": "done",
     "title": "M1-02: Env Config (Frontend)",
     "desc": "Config.js reads REACT_APP_API_URL. brand.js reads REACT_APP_GOOGLE_CLIENT_ID.",
@@ -195,7 +195,7 @@
     "ac": []
   },
   {
-    "id": "d16",
+    "id": "M1-02-BE",
     "col": "done",
     "title": "M1-02: Env Config (Backend)",
     "desc": "Datasource via env vars. Google client-id via GOOGLE_CLIENT_ID. .env.example created.",
@@ -208,7 +208,7 @@
     "ac": []
   },
   {
-    "id": "d17",
+    "id": "M1-03",
     "col": "done",
     "title": "M1-03: RBAC",
     "desc": "role column on customer. RoleGuard utility. 4 roles. First user auto-ADMIN. Login response includes role.",
@@ -221,7 +221,7 @@
     "ac": []
   },
   {
-    "id": "d18",
+    "id": "M1-04",
     "col": "done",
     "title": "M1-04: Email Login",
     "desc": "Login accepts email or contact number. Unique email constraint in DB.",
@@ -234,7 +234,7 @@
     "ac": []
   },
   {
-    "id": "d19",
+    "id": "M1-05",
     "col": "done",
     "title": "M1-05: Frontend Auth Context",
     "desc": "Role in sessionStorage. AuthGuard.js: isLoggedIn, getRole, requireRole. Profile route guarded.",
@@ -247,7 +247,7 @@
     "ac": []
   },
   {
-    "id": "d20",
+    "id": "M1-06",
     "col": "done",
     "title": "M1-06: Admin Dashboard APIs",
     "desc": "AdminController: dashboard stats, restaurants, orders, users. PUT status + role. All ADMIN-guarded.",
@@ -260,7 +260,7 @@
     "ac": []
   },
   {
-    "id": "d21",
+    "id": "M1-07",
     "col": "done",
     "title": "M1-07: Admin Dashboard Frontend",
     "desc": "/admin route with sidebar. Stats tiles, Restaurants (approve/suspend), Users (role change), Orders. Pagination.",
@@ -273,7 +273,7 @@
     "ac": []
   },
   {
-    "id": "d22",
+    "id": "M1-08",
     "col": "done",
     "title": "M1-08: Backend Test Coverage",
     "desc": "RoleGuard tests, AdminController tests, email login tests. All 107+ tests pass.",
@@ -286,7 +286,7 @@
     "ac": []
   },
   {
-    "id": "d23",
+    "id": "M1-09",
     "col": "done",
     "title": "M1-09: Frontend Test Coverage",
     "desc": "AuthGuard tests, Login page renders, Admin route guard. npm test passes.",
@@ -299,7 +299,7 @@
     "ac": []
   },
   {
-    "id": "d24",
+    "id": "BUG-001",
     "col": "done",
     "title": "BUG-001: VS Code JDT Overwrites",
     "desc": "VS Code Java ext overwrote Maven classes. Fixed with .vscode/settings.json.",
@@ -312,7 +312,7 @@
     "ac": []
   },
   {
-    "id": "d25",
+    "id": "BUG-002",
     "col": "done",
     "title": "BUG-002: DB Migrations V3-V5",
     "desc": "SQL migrations for role, email unique, restaurant status not applied. Fixed manually.",
@@ -325,7 +325,7 @@
     "ac": []
   },
   {
-    "id": "d26",
+    "id": "M1-10",
     "col": "done",
     "title": "M1-10: Milestone 1 E2E",
     "desc": "Full E2E: Google SSO, order, profile, admin CRUD, email login, env config, zero errors.",
@@ -334,11 +334,11 @@
     "milestone": "M1",
     "owner": "QA",
     "estimate": "3 hrs",
-    "blocked": "M1-01 to M1-09",
+    "blocked": "M1-01, M1-02-FE, M1-02-BE, M1-03, M1-04, M1-05, M1-06, M1-07, M1-08, M1-09",
     "ac": []
   },
   {
-    "id": "d27",
+    "id": "BUG-003",
     "col": "done",
     "title": "BUG-003: Home Crash on API Error",
     "desc": "Home.js crashed on non-200 response. Added response.ok check, fallback to [].",
@@ -351,7 +351,7 @@
     "ac": []
   },
   {
-    "id": "d28",
+    "id": "M2-01",
     "col": "done",
     "title": "M2-01: Restaurant Rating",
     "desc": "MUI Rating on DetailsRCard. Logged-in only. PUT /api/restaurant/{id}?customer_rating=X. Snackbar.",
@@ -364,7 +364,7 @@
     "ac": []
   },
   {
-    "id": "d29",
+    "id": "M2-02",
     "col": "done",
     "title": "M2-02: Coupon Support",
     "desc": "Coupon field + Apply in OrderSummaryCard. Valid = green chip + discount. Invalid = error. Remove option.",
@@ -377,7 +377,7 @@
     "ac": []
   },
   {
-    "id": "d30",
+    "id": "M2-QA",
     "col": "done",
     "title": "M2 QA: Rating + Coupon E2E",
     "desc": "End-to-end validation of rating and coupon features.",
@@ -390,7 +390,7 @@
     "ac": []
   },
   {
-    "id": "b01",
+    "id": "M3-01",
     "col": "review",
     "title": "M3-01: Admin Creates Restaurants + Menus",
     "desc": "Admin can create a restaurant and its full menu through the admin panel. This is how we onboard the first 10-20 restaurants before the owner portal exists.",
@@ -440,7 +440,7 @@
     ]
   },
   {
-    "id": "b02",
+    "id": "M3-02",
     "col": "review",
     "title": "M3-02: PENDING Approval Flow",
     "desc": "Self-registered restaurants land in PENDING, not ACTIVE. Admin reviews and approves. Marketplace trust gate.",
@@ -482,7 +482,7 @@
     ]
   },
   {
-    "id": "b03",
+    "id": "M3-03",
     "col": "review",
     "title": "M3-03: Restaurant Owner Invite Link",
     "desc": "Admin generates unique signup link per restaurant. Owner clicks, creates account, auto-linked as RESTAURANT_OWNER. Single-use, 7-day expiry.",
@@ -528,7 +528,7 @@
     ]
   },
   {
-    "id": "b04",
+    "id": "M3-04",
     "col": "review",
     "title": "M3-04: Owner Portal — Backend",
     "desc": "Self-serve portal. Owners without invite create new restaurant (PENDING). Owners via invite manage pre-created restaurant.",
@@ -578,7 +578,7 @@
     ]
   },
   {
-    "id": "b05",
+    "id": "M3-05",
     "col": "review",
     "title": "M3-05: Owner Portal — Frontend",
     "desc": "/my-restaurant route with RESTAURANT_OWNER guard. Create/edit restaurant, menu CRUD, orders, status badge.",
@@ -624,7 +624,7 @@
     ]
   },
   {
-    "id": "b06",
+    "id": "M3-06",
     "col": "review",
     "title": "M3-06: /for-restaurants Landing Page",
     "desc": "Public marketing page. Hero + benefits + CTA. \"Zero commission for 3 months.\" Drives self-serve signups.",
@@ -666,7 +666,7 @@
     ]
   },
   {
-    "id": "b07",
+    "id": "M3-07",
     "col": "review",
     "title": "M3-07: Docker Compose",
     "desc": "docker-compose.yml at root. PostgreSQL 17 (seeded), backend + frontend containers. Fresh clone to running app.",
@@ -675,7 +675,7 @@
     "milestone": "M3",
     "owner": "Dev 1",
     "estimate": "3 hrs",
-    "blocked": "M1-02",
+    "blocked": "M1-02-FE, M1-02-BE",
     "ac": [
       {
         "t": "docker-compose.yml at project root",
@@ -704,7 +704,7 @@
     ]
   },
   {
-    "id": "b08",
+    "id": "M3-08",
     "col": "progress",
     "title": "M3-08: QA — Milestone 3 E2E",
     "desc": "Full E2E: admin creates restaurant + menu, invite link flow, owner self-serve, PENDING approval, Docker.",
@@ -713,7 +713,7 @@
     "milestone": "M3",
     "owner": "QA",
     "estimate": "3 hrs",
-    "blocked": "M3-01 to M3-07",
+    "blocked": "M3-01, M3-02, M3-03, M3-04, M3-05, M3-06, M3-07",
     "ac": [
       {
         "t": "Admin creates restaurant + 10 menu items in under 15 minutes",
@@ -750,7 +750,7 @@
     ]
   },
   {
-    "id": "b09",
+    "id": "M4-01",
     "col": "review",
     "title": "M4-01: Order Tracking",
     "desc": "Order status flow: PLACED > CONFIRMED > PREPARING > OUT_FOR_DELIVERY > DELIVERED. MUI Stepper. 30s polling.",
@@ -792,7 +792,7 @@
     ]
   },
   {
-    "id": "b10",
+    "id": "M4-02",
     "col": "review",
     "title": "M4-02: Favorites / Wishlist",
     "desc": "Heart icon on restaurant cards. Favorites tab on Profile. POST/DELETE /customer/favorites.",
@@ -830,7 +830,7 @@
     ]
   },
   {
-    "id": "b11",
+    "id": "M5-01",
     "col": "backlog",
     "title": "M5-01: React Native Scaffold",
     "desc": "Expo project. Home, Details, Checkout, Profile, Login. Google SSO via AuthSession. Coral-red theme.",
@@ -868,7 +868,7 @@
     ]
   },
   {
-    "id": "b12",
+    "id": "M5-02",
     "col": "backlog",
     "title": "M5-02: Push Notifications",
     "desc": "Opt-in prompt. Order placed = push. Backend device_tokens table. Expo Notifications or FCM.",
@@ -898,7 +898,7 @@
     ]
   },
   {
-    "id": "b13",
+    "id": "M5-03",
     "col": "review",
     "title": "M5-03: Bulk Restaurant Import (CSV)",
     "desc": "POST /admin/restaurants/import. CSV upload for chains. Validation + error report. Admin UI.",
