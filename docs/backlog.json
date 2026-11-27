@@ -402,23 +402,23 @@
     "blocked": "M1-06, M1-07",
     "ac": [
       {
-        "t": "POST /api/admin/restaurants — ADMIN creates restaurant (name, photo_url, avg_price, address)",
+        "t": "POST /api/admin/restaurants \u2014 ADMIN creates restaurant (name, photo_url, avg_price, address)",
         "d": true
       },
       {
-        "t": "POST /api/admin/restaurants/{uuid}/items — ADMIN adds menu items to any restaurant",
-        "d": false
-      },
-      {
-        "t": "PUT /api/admin/restaurants/{uuid}/items/{itemUuid} — ADMIN edits any menu item",
-        "d": false
-      },
-      {
-        "t": "DELETE /api/admin/restaurants/{uuid}/items/{itemUuid} — ADMIN removes menu item",
+        "t": "POST /api/admin/restaurants/{uuid}/items \u2014 ADMIN adds menu items to any restaurant",
         "d": true
       },
       {
-        "t": "POST /api/admin/restaurants/{uuid}/categories — ADMIN assigns categories",
+        "t": "PUT /api/admin/restaurants/{uuid}/items/{itemUuid} \u2014 ADMIN edits any menu item",
+        "d": true
+      },
+      {
+        "t": "DELETE /api/admin/restaurants/{uuid}/items/{itemUuid} \u2014 ADMIN removes menu item",
+        "d": true
+      },
+      {
+        "t": "POST /api/admin/restaurants/{uuid}/categories \u2014 ADMIN assigns categories",
         "d": false
       },
       {
@@ -435,7 +435,7 @@
       },
       {
         "t": "Admin can create a restaurant + 20 menu items in under 15 minutes",
-        "d": false
+        "d": true
       }
     ]
   },
@@ -494,7 +494,7 @@
     "blocked": "M3-01",
     "ac": [
       {
-        "t": "POST /api/admin/restaurants/{uuid}/invite — generates unique invite token (UUID, 7-day expiry)",
+        "t": "POST /api/admin/restaurants/{uuid}/invite \u2014 generates unique invite token (UUID, 7-day expiry)",
         "d": true
       },
       {
@@ -502,11 +502,11 @@
         "d": true
       },
       {
-        "t": "GET /api/invite/{token} — public, returns restaurant name + invite status",
+        "t": "GET /api/invite/{token} \u2014 public, returns restaurant name + invite status",
         "d": true
       },
       {
-        "t": "Frontend: /invite/{token} route — shows restaurant name + \"Create account to manage\"",
+        "t": "Frontend: /invite/{token} route \u2014 shows restaurant name + \"Create account to manage\"",
         "d": true
       },
       {
@@ -530,7 +530,7 @@
   {
     "id": "M3-04",
     "col": "review",
-    "title": "M3-04: Owner Portal — Backend",
+    "title": "M3-04: Owner Portal \u2014 Backend",
     "desc": "Self-serve portal. Owners without invite create new restaurant (PENDING). Owners via invite manage pre-created restaurant.",
     "priority": "P1",
     "platform": "Backend",
@@ -544,27 +544,27 @@
         "d": true
       },
       {
-        "t": "POST /api/restaurant — RESTAURANT_OWNER creates restaurant (status=PENDING)",
+        "t": "POST /api/restaurant \u2014 RESTAURANT_OWNER creates restaurant (status=PENDING)",
         "d": true
       },
       {
-        "t": "PUT /api/restaurant/{uuid} — owner edits own restaurant only",
+        "t": "PUT /api/restaurant/{uuid} \u2014 owner edits own restaurant only",
         "d": false
       },
       {
-        "t": "POST /api/restaurant/{uuid}/item — add menu item",
-        "d": false
-      },
-      {
-        "t": "PUT /api/restaurant/{uuid}/item/{itemUuid} — edit item",
-        "d": false
-      },
-      {
-        "t": "DELETE /api/restaurant/{uuid}/item/{itemUuid} — remove item",
+        "t": "POST /api/restaurant/{uuid}/item \u2014 add menu item",
         "d": true
       },
       {
-        "t": "GET /api/restaurant/mine — list restaurants owned by current user",
+        "t": "PUT /api/restaurant/{uuid}/item/{itemUuid} \u2014 edit item",
+        "d": true
+      },
+      {
+        "t": "DELETE /api/restaurant/{uuid}/item/{itemUuid} \u2014 remove item",
+        "d": true
+      },
+      {
+        "t": "GET /api/restaurant/mine \u2014 list restaurants owned by current user",
         "d": true
       },
       {
@@ -580,7 +580,7 @@
   {
     "id": "M3-05",
     "col": "review",
-    "title": "M3-05: Owner Portal — Frontend",
+    "title": "M3-05: Owner Portal \u2014 Frontend",
     "desc": "/my-restaurant route with RESTAURANT_OWNER guard. Create/edit restaurant, menu CRUD, orders, status badge.",
     "priority": "P1",
     "platform": "Web",
@@ -607,7 +607,7 @@
       },
       {
         "t": "Menu item management: add / edit / delete with name, price, type (VEG/NON_VEG)",
-        "d": false
+        "d": true
       },
       {
         "t": "Incoming orders list for their restaurant(s)",
@@ -636,7 +636,7 @@
     "blocked": "M3-04",
     "ac": [
       {
-        "t": "/for-restaurants route — public, no auth required",
+        "t": "/for-restaurants route \u2014 public, no auth required",
         "d": true
       },
       {
@@ -706,7 +706,7 @@
   {
     "id": "M3-08",
     "col": "progress",
-    "title": "M3-08: QA — Milestone 3 E2E",
+    "title": "M3-08: QA \u2014 Milestone 3 E2E",
     "desc": "Full E2E: admin creates restaurant + menu, invite link flow, owner self-serve, PENDING approval, Docker.",
     "priority": "P0",
     "platform": "QA",
@@ -717,7 +717,7 @@
     "ac": [
       {
         "t": "Admin creates restaurant + 10 menu items in under 15 minutes",
-        "d": false
+        "d": true
       },
       {
         "t": "Admin generates invite link, opens in incognito, signs up = auto-linked as owner",
@@ -729,7 +729,7 @@
       },
       {
         "t": "Owner edits menu items on their own restaurant only",
-        "d": false
+        "d": true
       },
       {
         "t": "Owner cannot access another owner restaurant (403)",
@@ -770,11 +770,11 @@
         "d": false
       },
       {
-        "t": "GET /api/order/{uuid}/status — returns current status",
+        "t": "GET /api/order/{uuid}/status \u2014 returns current status",
         "d": false
       },
       {
-        "t": "PUT /api/order/{uuid}/status — ADMIN or RESTAURANT_OWNER can update",
+        "t": "PUT /api/order/{uuid}/status \u2014 ADMIN or RESTAURANT_OWNER can update",
         "d": false
       },
       {
@@ -808,15 +808,15 @@
         "d": false
       },
       {
-        "t": "POST /api/customer/favorites/{restaurantUuid} — add",
+        "t": "POST /api/customer/favorites/{restaurantUuid} \u2014 add",
         "d": false
       },
       {
-        "t": "DELETE /api/customer/favorites/{restaurantUuid} — remove",
+        "t": "DELETE /api/customer/favorites/{restaurantUuid} \u2014 remove",
         "d": false
       },
       {
-        "t": "GET /api/customer/favorites — list",
+        "t": "GET /api/customer/favorites \u2014 list",
         "d": false
       },
       {
@@ -910,7 +910,7 @@
     "blocked": "M3-01",
     "ac": [
       {
-        "t": "POST /api/admin/restaurants/import — accepts CSV file (multipart)",
+        "t": "POST /api/admin/restaurants/import \u2014 accepts CSV file (multipart)",
         "d": false
       },
       {
@@ -961,7 +961,7 @@
     "id": "f03",
     "col": "backlog",
     "title": "Facebook / Apple OAuth2",
-    "desc": "Consumer SSO providers — higher priority than GitHub for food app.",
+    "desc": "Consumer SSO providers \u2014 higher priority than GitHub for food app.",
     "priority": "P2",
     "platform": "Both",
     "milestone": "Future",
@@ -1090,7 +1090,7 @@
   {
     "id": "BUG-004",
     "col": "done",
-    "title": "BUG-004: addMenuItem 500 — Hibernate flush order",
+    "title": "BUG-004: addMenuItem 500 \u2014 Hibernate flush order",
     "desc": "POST /admin/restaurants/{uuid}/items and POST /restaurant/{uuid}/item both return 500. Root cause: AdminService.addMenuItem and RestaurantOwnerService.addMenuItem call itemDao.saveItem(item) (persist) then immediately use item.getId() in a native INSERT into restaurant_item. Hibernate has not flushed yet, so getId() returns null, violating the NOT NULL constraint on restaurant_item.item_id. Fix: add entityManager.flush() after persist, or use entityManager.persist + flush, or switch to a JPQL/managed relationship instead of a native query.",
     "priority": "P0",
     "platform": "Backend",
@@ -1102,15 +1102,67 @@
   },
   {
     "id": "BUG-005",
-    "col": "backlog",
+    "col": "done",
     "title": "BUG-005: ItemEntity.type @Size(max=10) incompatible with enum",
-    "desc": "REOPENED AGAIN: @Enumerated(EnumType.STRING) was added (GET /restaurant now works), but @Size(max=10) remains on the type field. @Size has no validator for enums → UnexpectedTypeException on any item INSERT (addMenuItem). Fix: remove @Size(max=10) from the type field in ItemEntity.java (the column length is enforced by the DB, not the validator).",
+    "desc": "REOPENED AGAIN: @Enumerated(EnumType.STRING) was added (GET /restaurant now works), but @Size(max=10) remains on the type field. @Size has no validator for enums \u2192 UnexpectedTypeException on any item INSERT (addMenuItem). Fix: remove @Size(max=10) from the type field in ItemEntity.java (the column length is enforced by the DB, not the validator).",
     "priority": "P0",
     "platform": "Backend",
     "milestone": "M3",
     "owner": "Dev 1",
     "estimate": "30 min",
     "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "BUG-006",
+    "col": "backlog",
+    "title": "BUG-006: Admin assign categories endpoint missing (404)",
+    "desc": "POST /api/admin/restaurants/{uuid}/categories returns 404. M3-01 AC requires admin to assign categories to a restaurant. No controller method or route exists for this endpoint.",
+    "priority": "P0",
+    "platform": "Backend",
+    "milestone": "M3",
+    "owner": "Dev 1",
+    "estimate": "2 hr",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "BUG-007",
+    "col": "backlog",
+    "title": "BUG-007: Owner edit restaurant endpoint missing (PUT /restaurant/{uuid})",
+    "desc": "PUT /api/restaurant/{uuid} returns 400 (no matching route). M3-04 requires owner to edit own restaurant details (name, avg_price, etc). RestaurantOwnerController only has item CRUD, no restaurant edit method.",
+    "priority": "P0",
+    "platform": "Backend",
+    "milestone": "M3",
+    "owner": "Dev 1",
+    "estimate": "2 hr",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "BUG-008",
+    "col": "backlog",
+    "title": "BUG-008: Owner incoming orders endpoint missing",
+    "desc": "No endpoint exists for restaurant owners to list incoming orders for their restaurant(s). M3-05 AC requires 'Incoming orders list for their restaurant(s)' in the owner portal. RestaurantOwnerController and OrderController have no owner-scoped order listing.",
+    "priority": "P0",
+    "platform": "Backend",
+    "milestone": "M3",
+    "owner": "Dev 1",
+    "estimate": "3 hr",
+    "blocked": "",
+    "ac": []
+  },
+  {
+    "id": "BUG-009",
+    "col": "backlog",
+    "title": "BUG-009: Owner portal missing edit restaurant details UI",
+    "desc": "M3-05 AC 'Edit restaurant details' \u2014 owner portal has no form to edit restaurant name, photo URL, avg price, or address. Also missing: incoming orders list UI. Blocked by BUG-007 and BUG-008 (backend endpoints needed first).",
+    "priority": "P0",
+    "platform": "Frontend",
+    "milestone": "M3",
+    "owner": "Dev 2",
+    "estimate": "3 hr",
+    "blocked": "BUG-007,BUG-008",
     "ac": []
   }
 ]
